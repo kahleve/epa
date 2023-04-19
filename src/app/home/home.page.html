@@ -1,22 +1,179 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Etec
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+<!--menu superior-->
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Etec</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-row class="ion-justify-content-center">
+  <ion-col size="6">
+    <ion-segment value="desis" (ionchange)="trocouCurso($event)">
+      <ion-segment-button value="desis">
+        <ion-label>Desenvolvimento de sistemas</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="culi">
+        <ion-label>Culinária</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="quimi">
+        <ion-label>Química</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-col>
+  </ion-row>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+  <!-- conteúdo de desenvolvimento de sistemas-->
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/12842477/pexels-photo-12842477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <ion-card-header>
+          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-subtitle>Ionic e Bootstrap</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/16149578/pexels-photo-16149578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <ion-card-header>
+          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-subtitle>HTML E CSS</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/9430857/pexels-photo-9430857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <ion-card-header>
+          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-subtitle>GITHUB</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <!-- conteúdo CULINARIA-->
+
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/12842477/pexels-photo-12842477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <ion-card-header>
+          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-subtitle>Ionic e Bootstrap</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/16149578/pexels-photo-16149578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <ion-card-header>
+          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-subtitle>HTML E CSS</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/9430857/pexels-photo-9430857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <ion-card-header>
+          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-subtitle>GITHUB</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+
+
+  <!-- conteúdo de quimica-->
+
+
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/15176454/pexels-photo-15176454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <ion-card-header>
+          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-subtitle>Ionic e Bootstrap</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/1028425/pexels-photo-1028425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <ion-card-header>
+          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-subtitle>HTML E CSS</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="image.png" />
+        <ion-card-header>
+          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-subtitle>GITHUB</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+
+
+
+
 </ion-content>
+
