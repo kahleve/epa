@@ -30,6 +30,7 @@
 
   <!-- conteúdo de desenvolvimento de sistemas-->
 
+  <ng-container *ngIf="this.item_selecionado == 'desis'">
   <ion-row class="ion-justify-content-center">
     <ion-col size="4">
       <ion-card>
@@ -73,16 +74,17 @@
       </ion-card>
     </ion-col>
   </ion-row>
+</ng-container>
 
   <!-- conteúdo CULINARIA-->
 
-
+  <ng-container *ngIf="this.item_selecionado == 'quimi'">
   <ion-row class="ion-justify-content-center">
     <ion-col size="4">
       <ion-card>
         <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/12842477/pexels-photo-12842477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
         <ion-card-header>
-          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-title>Culinária Francesa</ion-card-title>
           <ion-card-subtitle>Ionic e Bootstrap</ion-card-subtitle>
         </ion-card-header>
       
@@ -112,27 +114,26 @@
         <ion-card-header>
           <ion-card-title>Programação Mobile</ion-card-title>
           <ion-card-subtitle>GITHUB</ion-card-subtitle>
-        </ion-card-header>
-      
+          </ion-card-header>
         <ion-card-content>
           Here's a small text description for the card content. Nothing more, nothing less.
         </ion-card-content>
       </ion-card>
     </ion-col>
   </ion-row>
-
+</ng-container>
 
 
   <!-- conteúdo de quimica-->
 
 
-
+  <ng-container *ngIf="this.item_selecionado == 'culi'">
   <ion-row class="ion-justify-content-center">
     <ion-col size="4">
       <ion-card>
         <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/15176454/pexels-photo-15176454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
         <ion-card-header>
-          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-title>Quimica farmacia</ion-card-title>
           <ion-card-subtitle>Ionic e Bootstrap</ion-card-subtitle>
         </ion-card-header>
       
@@ -146,7 +147,7 @@
       <ion-card>
         <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/1028425/pexels-photo-1028425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
         <ion-card-header>
-          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-title>Quimica metanfetamina</ion-card-title>
           <ion-card-subtitle>HTML E CSS</ion-card-subtitle>
         </ion-card-header>
       
@@ -160,7 +161,7 @@
       <ion-card>
         <img alt="Silhouette of mountains" src="image.png" />
         <ion-card-header>
-          <ion-card-title>Programação Mobile</ion-card-title>
+          <ion-card-title>Quimica legal</ion-card-title>
           <ion-card-subtitle>GITHUB</ion-card-subtitle>
         </ion-card-header>
       
@@ -170,7 +171,7 @@
       </ion-card>
     </ion-col>
   </ion-row>
-
+</ng-container>
 
 
 
