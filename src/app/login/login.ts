@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
@@ -6,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: 'login.html',
   styleUrls: ['login.scss'],
   standalone: true,
-  imports: [IonicModule],
+  imports: [IonicModule,RouterLink],
 })
 export class LoginPage {
   constructor() {}

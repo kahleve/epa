@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: 'login.html',
-  styleUrls: ['login.scss'],
+  selector: 'app-cadastro',
+  templateUrl: 'cadastro.html',
+  styleUrls: ['cadastro.scss'],
   standalone: true,
-  imports: [IonicModule],
+  imports: [IonicModule,RouterLink],
 })
-export class LoginPage {
+export class CadastroPage {
   constructor() {}
 }
