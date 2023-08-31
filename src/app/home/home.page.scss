@@ -1,27 +1,369 @@
-#container {
-  text-align: center;
+*{
+    // outline: 1px dotted black;
+    // border: 1px solid black;
+    margin:0;
+    padding:0;
+    border:0;
+    overflow: hidden; //esconde barra de rolagem (scroll)
+    box-shadow: none;
+  }
+  
+  :root{
+  
+    --extra-small-size: 4px;
+    --smal-size: 8px;
+    --medium-size: 16px;
+    --large-size:32px;
+    --extra-large-size: 32px;
+  
+    --font-color: black;
+    
+  }
+  
+  #banner{
+    background: #EFE4F6;
+    width: auto;
+  }
+  
+  ion-header{
+    background: rgb(189,136,253);
+    background: linear-gradient(90deg, rgba(189,136,253,1) 35%, rgba(239,228,246,1) 100%);
+    width:100%;
+    height: 90px;
+  }
+  
+  
+  ion-searchbar.custom{
+    --background: #EFE4F6;
+    --color: #473BA3;
+    --placeholder-color: #473BA3;
+    --icon-color: #473BA3;
+    --clear-button-color: #473BA3;
+    --border-radius: 30px;
+    --box-shadow: none;
+  }
+  
+  #logo{
+    flex-direction: row;
+    justify-content: flex-start;
+    float: left;
+    margin: 10px;
+    transition: 0.5s;
+    
+  }
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  #logo:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+  #titulo{
+    width:auto;
+    height: auto;
+    display: flex;
+    margin: 3%;
+    margin-left:20%;
+    justify-content:left;
+    align-items: center;
+    color:#473BA3;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  
+  #titulo:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  #perfil{
+    width:7vw;
+    height:7vh;
+    float:right;
+    margin: 3%;
+    color:#473BA3;
+    // transition: 0.5s;
+  }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  // #perfil:hover {
+  //   -moz-transform: scale(1.2);
+  //   -webkit-transform: scale(1.2);
+  //   transform: scale(1.2);
+  //   width:300px;
+  //   justify-content: end;
+  // }
 
-  color: #8c8c8c;
+  #segundoheader{
+    background: #BD88FD;
+    height: 60px;
+  }
+  ion-button{
+    justify-content: center;
+    --background: #C9ADEB;
+    --border-radius: 120px;
+    color: black;
+    font-weight: bold;
+    box-shadow: none;
+    transition: 0.7s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;;
+  }
+  
+  ion-button:hover {
+    --moz-transform: scale(1.2);
+    --webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    width:300px;
+    text-align: start;
+    border-radius: 120px;
+    justify-content: space-between;
+   
+  }
 
-  margin: 0;
-}
+  ion-button img{
+    display: none;
+  }
+  ion-button:hover img{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+  }
+  h2{
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  h2:hover{
+    text-align: start;
+    justify-content: left;
+    color: black;
+    font-weight: bold;
+  }
 
-#container a {
-  text-decoration: none;
-}
+
+  ion-button:hover + #acucar{
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: left;
+    justify-content: left;
+  }
+
+  ion-col{
+    font-style:black;
+  }
+  
+  .destaques{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // DIVISOR
+
+  #divider{
+    background-color: #473BA3;
+    height: 4px;
+    border-radius: 90px;
+    justify-content: center;
+    align-items: center;
+  }
+  #espacamento{
+    padding: 20px;
+    margin: 20px;
+  }
+  #destaques{
+    width:20px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  #imagem1{
+    margin:10px;
+    padding:10px;
+  }
+  #imagem2{
+    margin:10px;
+    padding:10px;
+  }
+  #imagem3{
+    margin:10px;
+    padding:10px;
+  }
+  #carddestaques{
+    width: 950px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #C294F8;
+  }
+
+  ion-icon{
+    width: 60px;
+    height: 150px;
+    vertical-align: middle;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#473BA3;
+  }
+
+  // LISTA RECEITAS
+  #listareceitas{
+    --width: 1500px;
+  }
+
+  .imagens{
+    width:90%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+  }
+
+  #imagem{
+    margin: 10px;
+    padding: 10px;
+  }
+
+
+
+  // TIPOS
+  .box{
+    justify-content: center;
+    margin: 50px;
+    width: 250px;
+    height:300px;
+    border-radius: 10%;
+    background: #D0BCE8;
+  }
+  .boxxie{
+    height: 220px;
+    margin: 10px;
+    // padding: 10px;
+    background: #EFE4F6;
+    border-radius: 15px;
+  }
+
+  h1{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+
+  ion-checkbox {
+    --size: 25px;
+    --checkbox-background-checked: #6815ec;
+    --checkbox-background:#EFE4F6;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    // margin-left: 8px;
+    // margin-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 100%;
+    color: black;
+  //  float: left;
+  //   margin-left: 8px;
+  //   margin-right: 8px;
+  //   margin-top: 5px;
+  //   width:100%;
+  //   color: black; 
+  }
+  
+  ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid #6815ec;
+    
+  }
+  ion-checkbox:hover{
+    background-color: #D0BCE8;
+    text-align: left;
+    transition: 0.4s;
+  }
+  
+
+
+
+
+
+
+//  FOOTER
+
+  #subbanner{
+    background-color: #C294F8;
+    background:#C294F8;
+    color:#C294F8;
+    height: 150px;
+    width:auto;
+    margin-top: 50px;
+  }
+
+  #colunasfooter{
+    height: auto;
+  }
+
+  ion-title{
+    color:black;
+    width: 200px;
+  }
+
+  #logofooter{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 0.3s;
+  }
+  #logofooter:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+  }
+
+  #titulofooter{
+    width:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:#473BA3;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top:10px;
+  }
+
+  #redesfooter{
+    width:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:#473BA3;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top:10px;
+  }
+
+  #iconesredes{
+    height:60px;
+    width:60px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 0.3s;
+  }
+  #iconesredes:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+  }
