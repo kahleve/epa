@@ -1,0 +1,149 @@
+<ion-content [fullscreen]="true">
+    <ion-row class="ion-justify-content-center" id="banner">
+      <ion-col size="12" size-mg="12" size-lg="12" class="ion-text-center full-height">
+       <ion-header collapse="fade">
+ 
+          <!-- HEADER -->
+          <ion-row class="align-items-center">
+           <ion-col>
+             <img srcset="../assets/polivalente.png" width="70px" height="70px" id="logo">
+             <h1 id="titulo">Polivalente</h1>
+             </ion-col>
+           <ion-col>
+             <ion-searchbar class="custom"
+                 show-cancel-button="never"
+                 animated="true"
+                 placeholder="Pesquisar..."
+                 class="custom"
+             ></ion-searchbar>
+           </ion-col>
+           <ion-col>
+             <a>
+             <ion-icon name="person-circle-outline" id="perfil" routerLink="/login"></ion-icon>
+           </a>
+           </ion-col>
+         </ion-row>
+       </ion-header>
+ 
+ 
+ 
+       <!-- OPÇOES -->
+ 
+       <ion-row class="align-items-center" id="segundoheader">
+         <ion-col>
+           <ion-button>
+            <h2>Sem Gluten</h2>
+            <img src="../assets/gluten.png" id="gluten">
+          </ion-button>
+         </ion-col>
+         <ion-col>
+           <ion-button>
+            <h2>Sem Lactose</h2>
+            <img src="../assets/lactose.png" id="lactose">
+          </ion-button>
+        
+         </ion-col>
+         <ion-col>
+           <ion-button>
+            <h2>Sem Açúcar</h2>
+            <img src="../assets/açucar.png" id="acucar">
+          </ion-button>
+         </ion-col>
+         <ion-col>
+           <ion-button>
+            <h2>Low Carb</h2>
+            <img src="../assets/carboidrato.png" id="carboidrato">
+          </ion-button>
+         </ion-col>
+       </ion-row>
+ 
+    
+ <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+ 
+       <!-- DIVIDER -->
+
+       <ion-col size="8">
+ <ion-row class="align-items-left" id="espacamento">
+  <ion-col size="1"></ion-col>
+  <ion-col size="2" id="divider"></ion-col>
+  <ion-col size="3" id="nomerec">Nome receita</ion-col>
+  <ion-col size="2" id="divider"></ion-col>
+  <ion-col size="4"></ion-col>
+
+
+
+
+  
+</ion-row>
+
+ <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+ <!--IMAGEM RECEITA-->
+
+ <ion-row class="align-items-center" id="espacoimagem">
+  <ion-col size="1"></ion-col>
+  <ion-col size="2"></ion-col>
+  <ion-col size="3"> 
+    <img src="https://images.pexels.com/photos/18013806/pexels-photo-18013806/free-photo-of-fotografia-aerea-aerofotografia-fotografia-animal-fotografia-de-animais.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="fotorec">
+  </ion-col>
+  <ion-col size="2"></ion-col>
+  <ion-col size="4"></ion-col>
+ </ion-row>
+
+
+ <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+ 
+       <!-- DIVIDER -->
+
+       <ion-row class="align-items-center" id="espacamento">
+        <ion-col size="1"></ion-col>
+        <ion-col size="2" id="divider"></ion-col>
+        <ion-col size="3" id="nomerec">Ingredientes</ion-col>
+        <ion-col size="2" id="divider"></ion-col>
+        <ion-col size="4"></ion-col>
+      </ion-row>
+      
+ <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+       <!--INGREDIENTES-->
+       <ion-row>
+        <ion-col size="2"></ion-col>
+        <ion-col size="5">
+          <ion-item id="ingredientebox">
+            <ion-list lines="none">
+              <h4>asso1</h4>
+              <h4>asso1</h4>
+              <h4>asso1</h4>
+              <h4>asso1</h4>
+              <h4>asso1</h4>
+              <h4>asso1</h4>
+              <h4>asso1</h4>
+            </ion-list>
+          </ion-item>
+        </ion-col>
+        
+       </ion-row>
+
+      </ion-col>
+
+      <ion-col size="4"></ion-col>
+ 
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+ 
+       <!-- DIVIDER -->
+
+       <ion-row class="align-items-center" id="espacamento">
+        <ion-col size="1"></ion-col>
+        <ion-col size="2" id="divider"></ion-col>
+        <ion-col size="3" id="nomerec">Modo de Preparo</ion-col>
+        <ion-col size="2" id="divider"></ion-col>
+        <ion-col size="4"></ion-col>
+      </ion-row>
+
+
+
+ </ion-col>
+ </ion-row>
+ </ion-content>
+ 

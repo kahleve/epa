@@ -18,4 +18,12 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'receita',
+    loadComponent: () => import('./receita/receita.page').then( m => m.ReceitaPage)
+  },
+  {
+    path: 'perfil',
+    loadComponent: () => import('./perfil/perfil.page').then( m => m.PerfilPage)
+  },
 ];
