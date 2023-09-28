@@ -162,43 +162,43 @@
                       <img src="https://images.pexels.com/photos/299347/pexels-photo-299347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="imagem" expand="block">
 
       
-                      <ion-content class="ion-padding">
-                        <ion-modal id="modal" #modal trigger="imagem">
-                          <ng-template>
-                          
-                              
-                                <ion-item button="true" detail="false" (click)="modal.dismiss()" id="cardzin" lines="none">
-                                 <img src="https://images.pexels.com/photos/299347/pexels-photo-299347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="imgrec">
-                                 <ion-col size="7">
-                                  <h5 id="nomerec">Nome da Receita</h5>
-                                  <h4>Passa pra eles estar no ponto as 12:45 do ônibus 01.
-                                    Ônibus 02 umas 12:55.
-                                    Eu que agradeço 🙏
-                                    Amém 🙏
-                                    Deus abençoe tbm 🙏Passa pra eles estar no ponto as 12:45 do ônibus 01.
-                                    Ônibus 02 umas 12:55.
-                                    Eu que🙏</h4>
-                                </ion-col>
-                                 <ion-col size="2" id="colcard">
-                                  <div id="restri">
-                                  <img src="../assets/gluten.png" id="gluten" class="iconsrestr">
-                                  <img src="../assets/lactose.png" id="lactose" class="iconsrestr">
-                                  <img src="../assets/açucar.png" id="acucar" class="iconsrestr">
-                                  <img src="../assets/carboidrato.png" id="carboidrato" class="iconsrestr">
-                                  </div>
-                                 </ion-col>
-                                </ion-item>
-                              
-                                <!-- <ion-item button="true" detail="false" (click)="modal.dismiss()" id="cardzin" lines="none">
-                                  <ion-col size="2" id="colcard"><img src="https://images.pexels.com/photos/299347/pexels-photo-299347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="imgrec"></ion-col> 
-                                  <ion-col size="9" id="colcard"><ion-title id="nomerec">Nome da Receita</ion-title></ion-col>
-                                  <ion-col size="1" id="colcard"></ion-col>
-                                 </ion-item>
-                               
-                          -->
-                          </ng-template>
-                        </ion-modal>
-                      </ion-content>
+                                <ion-content class="ion-padding">
+                                  <ion-modal id="modal" #modal trigger="imagem">
+                                    <ng-template>
+                                    
+                                        
+                                          <ion-item button="true" detail="false" (click)="modal.dismiss()" id="cardzin" lines="none" routerLink="/receita">
+                                          <img src="https://images.pexels.com/photos/299347/pexels-photo-299347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="imgrec">
+                                          <ion-col size="7">
+                                            <h5 id="nomerec">Nome da Receita</h5>
+                                            <h4>Passa pra eles estar no ponto as 12:45 do ônibus 01.
+                                              Ônibus 02 umas 12:55.
+                                              Eu que agradeço 🙏
+                                              Amém 🙏
+                                              Deus abençoe tbm 🙏Passa pra eles estar no ponto as 12:45 do ônibus 01.
+                                              Ônibus 02 umas 12:55.
+                                              Eu que🙏</h4>
+                                          </ion-col>
+                                          <ion-col size="2" id="colcard">
+                                            <div id="restri">
+                                            <img src="../assets/gluten.png" id="gluten" class="iconsrestr">
+                                            <img src="../assets/lactose.png" id="lactose" class="iconsrestr">
+                                            <img src="../assets/açucar.png" id="acucar" class="iconsrestr">
+                                            <img src="../assets/carboidrato.png" id="carboidrato" class="iconsrestr">
+                                            </div>
+                                          </ion-col>
+                                          </ion-item>
+                                        
+                                          <!-- <ion-item button="true" detail="false" (click)="modal.dismiss()" id="cardzin" lines="none">
+                                            <ion-col size="2" id="colcard"><img src="https://images.pexels.com/photos/299347/pexels-photo-299347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="imgrec"></ion-col> 
+                                            <ion-col size="9" id="colcard"><ion-title id="nomerec">Nome da Receita</ion-title></ion-col>
+                                            <ion-col size="1" id="colcard"></ion-col>
+                                          </ion-item>
+                                        
+                                    -->
+                                    </ng-template>
+                                  </ion-modal>
+                                </ion-content>
                 </div>
               </ion-col>
                     <!-- FILTRAGEM -->
