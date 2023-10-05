@@ -1,6 +1,6 @@
 *{
-  outline: 1px dotted black;
-  border: 1px solid black;
+  // outline: 1px dotted black;
+  // border: 1px solid black;
   margin:0;
   padding:0;
   border:0;
@@ -189,15 +189,113 @@ ion-button:hover + #acucar{
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                  
                   #espacoimagem{
-                    height:25vh;
+                    height:35vh;
                   }
 
                   #fotorec{
-                    width:90%;
-                    height:80%
+                    width:100%;
+                    height:100%
                   }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                   #ingredientebox{
                     --background: #D0BCE8;
                     height:fit-content;
+                    border-radius: 15px;
                   }
+                  #like{
+                    width: 40px;
+                    height: 40px;
+                    margin: 10px;
+                    color:#473BA3;
+                  }
+
+                  #like:focus{
+                    color:black;
+                  }
+
+                  #imagensrec{
+                    width:50%;
+                    height:100%;
+                    float:left;
+                    border-radius: 20px;
+                    margin:0;
+                  }
+                  #espacoremomendados{
+                    display:block;
+                  }
+                  #imgholder{
+                    margin:8%;
+                    height:17vh;
+                    border-radius: 20px;
+                    background:#D0BCE8;
+                    --box-shadow: none;
+                    --padding: 0%;
+                  }
+                 
+
+
+
+
+                  //  FOOTER
+
+  #subbanner{
+    background-color: #C294F8;
+    background:#C294F8;
+    color:#C294F8;
+    height: 15vh;
+    width:auto;
+    margin-top: 2%;
+  }
+
+  #colunasfooter{
+    height: auto;
+  }
+
+  ion-title{
+    color:black;
+    width: 200px;
+  }
+
+  #logofooter{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 0.3s;
+  }
+  #logofooter:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+  }
+
+  #titulofooter{
+    width:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:#473BA3;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top:10px;
+  }
+
+  #redesfooter{
+    width:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:#473BA3;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top:10px;
+  }
+
+  #iconesredes{
+    height:60px;
+    width:60px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color:#473BA3;
+  }
