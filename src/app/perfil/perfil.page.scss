@@ -169,10 +169,16 @@ ion-button:hover + #acucar{
     align-items: center;
     justify-content: center;
 }
+#curti{
+  height:10vh;
+  width:10vw;
+  align-items: center;
+  justify-content: center;
+}
 
 #separacurt{
     height:34vh;
-    background-color:#D0BCE8;
+    background-color:#B477FA;
     transition: 0.5s;
     display:flex;
     color:#473BA3;
@@ -186,7 +192,7 @@ ion-button:hover + #acucar{
 
 #separafavo{
     height:34vh;
-    background-color: #C294F8;
+    background-color: #B477FA;
     transition: 0.5s;
     display:flex;
     color:#473BA3;
@@ -221,11 +227,64 @@ ion-button:hover + #acucar{
   font-weight: bold;
 }
 
+#nomeavarestri{
+  height:100%;
+}
+#restri{
+  height:100%;
+}
+
+.iconsrestr{
+  width:35%;
+  height:35%;
+  margin:5%;
+}
+
+#nomeava{
+  height:100%;
+}
+#nome{
+  font-size: 20px;
+  text-align: center;
+  height: 50%;
+}
+
+#avaliacao{
+  font-size: 20px;
+  height: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
+#imagensrec{
+  width:30%;
+  height:100%;
+  float:left;
+  border-radius: 20px;
+  margin:0;
+}
+#espacoremomendados{
+  display:block;
+}
+#imgholder{
+  margin:5%;
+  height:13vh;
+  width:80%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background:#D0BCE8;
+  --box-shadow: none;
+  --padding: 0%;
+}
 
+#listinha{
+  background:#B477FA;
 
+}
 
 
 
