@@ -12,29 +12,19 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class PerfilPage implements OnInit {
+  selected: any='curti'
   
     constructor() { }
   
     ngOnInit() {}
    
     handleCurtirClick() {
-      const iconeCurtir = document.getElementById('curti');
-      const iconeFavorito = document.getElementById('favos');
+      this.selected='curti'
   
-      if (iconeCurtir && iconeFavorito) {
-        iconeCurtir.style.background = 'black';
-        iconeFavorito.style.background = 'transparent';
-      }
     }
   
     handleFavoritoClick() {
-      const iconeCurtir = document.getElementById('curti');
-      const iconeFavorito = document.getElementById('favos');
-  
-      if (iconeCurtir && iconeFavorito) {
-        iconeCurtir.style.background = 'transparent';
-        iconeFavorito.style.background = 'black';
-      }
+      this.selected='favos'
     }
   }
  

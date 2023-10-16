@@ -87,18 +87,76 @@
   
      </ion-col>
 
-
-     <ion-col size="1">
-      <ion-row class="ion-align-items-center ion-justify-content-center" id="separacurt" (click)="handleCurtirClick()">
-        <ion-icon name="heart-outline" id="curti"></ion-icon>
-      </ion-row>
-      <ion-row class="ion-align-items-center ion-justify-content-center" id="separafavo" (click)="handleFavoritoClick()">
-        <ion-icon name="star-outline" id="favos"></ion-icon>
-      </ion-row>
-    </ion-col>
+<!-- /////////////////////////// COL CENTRAL ONDE FICAM OS ICONES  ////////////////////////////////////////////////////////////////////////////////// -->
+            <ion-col size="1">
+              <ion-row class="ion-align-items-center ion-justify-content-center" id="separacurt" (click)="handleCurtirClick()">
+                <ion-icon name="heart-outline" id="curti"></ion-icon>
+              </ion-row>
+              <ion-row class="ion-align-items-center ion-justify-content-center" id="separafavo" (click)="handleFavoritoClick()">
+                <ion-icon name="star-outline" id="favos"></ion-icon>
+              </ion-row>
+            </ion-col>
     
+<!-- /////////////////////////// COL PARA CURTIDAS  ////////////////////////////////////////////////////////////////////////////////// -->
+
+    <ion-col size="5" *ngIf="this.selected=='curti'" id="espacoreceitascurti">
+      <ion-content id="contentcurti">
+        <ion-list id="contentcurti">
+          <div id="imgholdercurti" lines="none">
+            <ion-col>
+            <img src="https://images.pexels.com/photos/18437691/pexels-photo-18437691/free-photo-of-jantar-janta-fotografia-de-alimentos-fotografia-de-comida.jpeg?auto=compress&cs=tinysrgb&w=1600" id="imagensrec">
+          </ion-col>
+          <ion-row id="nomeavarestri">
+            <ion-col size="8" id="nomeava">
+              <h1 id="nome">NOME DA RECEITA NOME</h1>
+              <P></P>
+              <h2 id="avaliacao" class="positiva">AVALIAÇAO 76% <ion-icon name="thumbs-up-outline"></ion-icon></h2>
+             
+            </ion-col>
+            <ion-col>
+              <div id="restri">
+              <img src="../assets/gluten.png" id="gluten" class="iconsrestr">
+              <!-- <img src="../assets/lactose.png" id="lactose" class="iconsrestr">
+              <img src="../assets/açucar.png" id="acucar" class="iconsrestr"> -->
+              <img src="../assets/carboidrato.png" id="carboidrato" class="iconsrestr">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      
+          <div id="imgholdercurti" lines="none">
+            <ion-col>
+            <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=1600" id="imagensrec">
+          </ion-col>
+          <ion-row id="nomeavarestri">
+            <ion-col size="8" id="nomeava">
+              <h1 id="nome">NOME DA RECEITA NOME</h1>
+              <P></P>
+              <h2 id="avaliacao">AVALIAÇAO 45%</h2>
+             
+            </ion-col>
+            <ion-col>
+              <div id="restri">
+              <img src="../assets/gluten.png" id="gluten" class="iconsrestr">
+              <img src="../assets/lactose.png" id="lactose" class="iconsrestr">
+              <img src="../assets/açucar.png" id="acucar" class="iconsrestr">
+              <img src="../assets/carboidrato.png" id="carboidrato" class="iconsrestr">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+        </ion-list>
+      </ion-content>
+    </ion-col>
             
-     <ion-col size="5" id="espacoreceitas">
+
+
+
+
+    <!-- /////////////////////////// COL PARA FAVORITADOS  ////////////////////////////////////////////////////////////////////////////////// -->
+
+
+     <ion-col size="5" *ngIf="this.selected=='favos'" id="espacoreceitasfavos">
       <ion-content id="conteudo">
         <ion-list id="listinha">
         <div id="imgholder" lines="none">

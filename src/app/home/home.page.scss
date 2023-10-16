@@ -127,8 +127,8 @@ ion-button img{
 }
 ion-button:hover img{
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
   margin-left: 12px;
 }
 h2{
@@ -499,7 +499,7 @@ ion-button:hover + #acucar{
 
 
 //card receitas
-#modal {
+ion-modal {
   --width: fit-content;
   --min-width: 30%;
   --max-width: 70%;
@@ -510,19 +510,19 @@ ion-button:hover + #acucar{
   --background: #D0BCE8;
 }
 
-#cardzin{
+.cardzin{
   --background: #D0BCE8;
 }
-#imgrec{
-width:25%;
-height: 60%;
+.imgrec{
+width:15vw;
+height:20vh;
 margin:1%;
 }
-#colcard{
+.colcard{
   height:90%;
   float: right;
 }
-#nomerec{
+.nomerec{
 width:auto;
 height:auto;
 font-size:30px;
@@ -532,7 +532,7 @@ font-weight: bold;
 color:#473BA3
 }
 
-#restri{
+.restri{
   height:100%;
   // display:grid;
   // grid-template-columns: 50% 50%;
@@ -543,31 +543,34 @@ color:#473BA3
 .iconsrestr{
   height:40%;
   width:40%;
-  
+  margin:5%;
 
 }
-#restri #gluten{
-  
+.restri{
   margin:5%;
-  float:left;
 }
-#restri #lactose{
+// #restri #gluten{
   
-  margin:5%;
-  float:right;
-}
-#restri #acucar{
+//   margin:5%;
+//   float:left;
+// }
+// #restri #lactose{
   
-  margin:5%;
-  float:left;
-  justify-content: first baseline;
-}
-#restri #carboidrato{
+//   margin:5%;
+//   float:right;
+// }
+// #restri #acucar{
   
-  margin:5%;
-  float:right;
-  justify-content: last baseline;
-}
+//   margin:5%;
+//   float:left;
+//   justify-content: first baseline;
+// }
+// #restri #carboidrato{
+  
+//   margin:5%;
+//   float:right;
+//   justify-content: last baseline;
+// }
 
 h4{
   color: black;

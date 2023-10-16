@@ -174,11 +174,12 @@ ion-button:hover + #acucar{
   width:10vw;
   align-items: center;
   justify-content: center;
+  
 }
 
 #separacurt{
     height:34vh;
-    background-color:#B477FA;
+    background-color:#D0BCE8;
     transition: 0.5s;
     display:flex;
     color:#473BA3;
@@ -203,7 +204,7 @@ ion-button:hover + #acucar{
   transform: scale(1.1);
 }
 
-#espacoreceitas{
+#espacoreceitasfavos{
     background-color:#D0BCE8;
 }
 
@@ -287,7 +288,28 @@ ion-button:hover + #acucar{
 }
 
 
+// CURTIDOS////////////////////////////////////////////////////////////
+#espacoreceitascurti{
+  background:#D0BCE8;
+}
 
+#contentcurti{
+  background-color:#D0BCE8;
+  --background:#D0BCE8;
+
+}
+
+#imgholdercurti{
+  margin:5%;
+  height:13vh;
+  width:80%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background:#B477FA;
+  --box-shadow: none;
+  --padding: 0%;
+}
 
 
 //  FOOTER
