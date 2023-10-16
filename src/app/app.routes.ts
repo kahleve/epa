@@ -42,4 +42,8 @@ export const routes: Routes = [
     path: 'lowcarb',
     loadComponent: () => import('./lowcarb/lowcarb.page').then( m => m.LowcarbPage)
   },
+  {
+    path: 'innertable',
+    loadComponent: () => import('./innertable/innertable.page').then( m => m.InnertablePage)
+  },
 ];
