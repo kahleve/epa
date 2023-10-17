@@ -1,29 +1,32 @@
+<!-- header -->
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Polivalente Receitas</ion-title>
+  <ion-toolbar class="header">
+    <ion-title class="ion-text-center" >Receitas Polivalente</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  
+<!-- conteudo -->
+<ion-content class="conteudofuncoes" [fullscreen]="true">
+  <!-- tabela com as funcoes -->
   <ion-grid [fixed]="true">
-    <ion-row>
+    <ion-row class="rowfuncoes">
+     <!-- receitas -->
       <ion-col class="ion-text-center" size="6">
           <h2>Receita</h2>
           <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes">Listar Receitas</ion-button>
+            <ion-button class="botaofuncoes" (click)="setOpenLR(true)">Listar Receitas</ion-button>
           </ion-row>
           <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes">Inserir Receitas</ion-button>
+            <ion-button class="botaofuncoes" (click)="setOpenIR(true)">Inserir Receitas</ion-button>
           </ion-row>
           <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes">Atualizar Receitas</ion-button>
+            <ion-button class="botaofuncoes" (click)="setOpenAR(true)">Atualizar Receitas</ion-button>
           </ion-row>
           <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes">Excluir Receitas</ion-button>
+            <ion-button class="botaofuncoes" (click)="setOpenER(true)">Excluir Receitas</ion-button>
           </ion-row>
       </ion-col>
-  
+        <!-- usuarios -->
       <ion-col class="ion-text-center" size="6">
           <h2>Usuario</h2>
           <ion-row class="ion-justify-content-center">
@@ -41,7 +44,121 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  
-  
-  
 </ion-content>
+
+ <!-- modal listar receitas -->
+ <ion-modal  [isOpen]="isModalOpenLR">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Modal</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="setOpenLR(false)">Fechar</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <p>
+        Alejandro
+        Alejandro
+        Ale-ale-jandro
+        Ale-ale-jandro
+        Alejandro
+        Alejandro
+        Ale-ale-jandro
+        Ale-ale-jandro
+      </p>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+ <!-- modal Inserir Receitas -->
+ <ion-modal  [isOpen]="isModalOpenIR">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Modal</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="setOpenIR(false)">Fechar</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <p>
+        Don't call my name
+        Don't call my name, Alejandro
+        I'm not your babe
+        I'm not your babe, Fernando
+        Don't wanna kiss, don't wanna touch
+        Just smoke my cigarette and hush
+        Don't call my name
+        Don't call my name, Roberto
+      </p>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+<!-- modal Atualizar Receitas -->
+<ion-modal  [isOpen]="isModalOpenAR">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Modal</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="setOpenAR(false)">Fechar</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <p>
+        She's not broken
+        She's just a baby
+        But her boyfriend's like a dad, just like a dad
+        And all those flames that burned before him
+        Now he's gonna fire fight, gotta cool the bad
+        You know that I love you boy
+        Hot like Mexico, rejoice
+        At this point I've gotta choose
+        Nothing to lose
+        Don't call my name
+      </p>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+<!-- modal Excluir Receitas -->
+<ion-modal  [isOpen]="isModalOpenER">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Modal</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="setOpenER(false)">Fechar</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <p>
+        I know that we are young
+        And I know that you may love me
+        But I just can't be with you like this anymore
+        Alejandro
+        She's got both hands
+        In her pocket
+        And she won't look at you
+        Won't look at you
+        She hides true love
+        En su bolsillo
+        She got a halo around her finger
+        Around you
+      </p>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+<!-- footer -->
+<ion-footer>
+  <ion-toolbar class="footer">
+    <ion-title class="ion-text-center"> Receitas Polivalente</ion-title>
+  </ion-toolbar>
+</ion-footer>
