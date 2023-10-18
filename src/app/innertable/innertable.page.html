@@ -1,7 +1,7 @@
 <!-- header -->
 <ion-header [translucent]="true">
   <ion-toolbar class="header">
-    <ion-title class="ion-text-center" >Receitas Polivalente</ion-title>
+    <ion-title class="ion-text-center">Receitas Polivalente</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,96 +10,147 @@
   <!-- tabela com as funcoes -->
   <ion-grid [fixed]="true">
     <ion-row class="rowfuncoes">
-     <!-- receitas -->
+      <!-- receitas -->
       <ion-col class="ion-text-center" size="6">
-          <h2>Receita</h2>
-          <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes" (click)="setOpenLR(true)">Listar Receitas</ion-button>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes" (click)="setOpenIR(true)">Inserir Receitas</ion-button>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes" (click)="setOpenAR(true)">Atualizar Receitas</ion-button>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes" (click)="setOpenER(true)">Excluir Receitas</ion-button>
-          </ion-row>
+        <h2>Receita</h2>
+        <ion-row class="ion-justify-content-center">
+          <ion-button class="botaofuncoes" (click)="setOpenLR(true)">Listar Receitas</ion-button>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-button class="botaofuncoes" (click)="setOpenIR(true)">Inserir Receitas</ion-button>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-button class="botaofuncoes" (click)="setOpenAR(true)">Atualizar Receitas</ion-button>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-button class="botaofuncoes" (click)="setOpenER(true)">Excluir Receitas</ion-button>
+        </ion-row>
       </ion-col>
-        <!-- usuarios -->
+      <!-- usuarios -->
       <ion-col class="ion-text-center" size="6">
-          <h2>Usuario</h2>
-          <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes">Listar Usuarios</ion-button>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes">Inserir Usuarios</ion-button>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes">Atualizar Usuarios</ion-button>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-button class="botaofuncoes">Excluir Usuarios</ion-button>
-          </ion-row>
+        <h2>Usuario</h2>
+        <ion-row class="ion-justify-content-center">
+          <ion-button class="botaofuncoes">Listar Usuarios</ion-button>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-button class="botaofuncoes">Inserir Usuarios</ion-button>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-button class="botaofuncoes">Atualizar Usuarios</ion-button>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-button class="botaofuncoes">Excluir Usuarios</ion-button>
+        </ion-row>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
 
- <!-- modal listar receitas -->
- <ion-modal  [isOpen]="isModalOpenLR">
+<!-- modal listar receitas -->
+<ion-modal [isOpen]="isModalOpenLR">
   <ng-template>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Modal</ion-title>
+        <ion-title>Lista de Receitas</ion-title>
         <ion-buttons slot="end">
           <ion-button (click)="setOpenLR(false)">Fechar</ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding">
-      <p>
-        Alejandro
-        Alejandro
-        Ale-ale-jandro
-        Ale-ale-jandro
-        Alejandro
-        Alejandro
-        Ale-ale-jandro
-        Ale-ale-jandro
-      </p>
+    <ion-content class="ion-padding ion-text-center ion-align-items-center">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h3>Receitas</h3>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-align-items-center">
+            <ion-button class="botaofuncoes" (click)="fecharModalENavegar()">Sem Lactose</ion-button>
+
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-align-items-center">
+            <ion-button class="botaofuncoes">Sem Gluten</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-align-items-center">
+            <ion-button class="botaofuncoes">Low Carb</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-align-items-center">
+            <ion-button class="botaofuncoes">Sem açúcar</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ng-template>
 </ion-modal>
 
- <!-- modal Inserir Receitas -->
- <ion-modal  [isOpen]="isModalOpenIR">
+
+
+
+
+
+
+<!-- modal Inserir Receitas -->
+<ion-modal [isOpen]="isModalOpenIR">
   <ng-template>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Modal</ion-title>
+        <ion-title>Inserir Receita</ion-title>
         <ion-buttons slot="end">
           <ion-button (click)="setOpenIR(false)">Fechar</ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding">
-      <p>
-        Don't call my name
-        Don't call my name, Alejandro
-        I'm not your babe
-        I'm not your babe, Fernando
-        Don't wanna kiss, don't wanna touch
-        Just smoke my cigarette and hush
-        Don't call my name
-        Don't call my name, Roberto
-      </p>
+    <ion-content class="ion-padding ion-text-center ion-align-items-center">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h3>Inserir Receitas</h3>
+          </ion-col>
+        </ion-row>
+
+       <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item>
+              <ion-select aria-label="Fruit" placeholder="Selecione o tipo da Receita" [multiple]="true">
+                <ion-select-option value="sLactose">Sem Lactose</ion-select-option>
+                <ion-select-option value="sGluten">Sem Gluten</ion-select-option>
+                <ion-select-option value="lCarb">Low Carb</ion-select-option>
+                <ion-select-option value="sAcucar">Sem Açucar</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+       </ion-row>
+
+       <ion-row>
+        <ion-col>
+          <ion-input label="Nome da receita" label-placement="floating" fill="outline" placeholder=""></ion-input>
+        </ion-col>
+       </ion-row>
+
+       <ion-row>
+        <ion-col>
+          <ion-input label="Modo de Preparo" label-placement="floating" fill="outline" placeholder=""></ion-input>
+        </ion-col>
+       </ion-row>
+
+      </ion-grid>
+
     </ion-content>
   </ng-template>
 </ion-modal>
 
 <!-- modal Atualizar Receitas -->
-<ion-modal  [isOpen]="isModalOpenAR">
+<ion-modal [isOpen]="isModalOpenAR">
   <ng-template>
     <ion-header>
       <ion-toolbar>
@@ -127,7 +178,7 @@
 </ion-modal>
 
 <!-- modal Excluir Receitas -->
-<ion-modal  [isOpen]="isModalOpenER">
+<ion-modal [isOpen]="isModalOpenER">
   <ng-template>
     <ion-header>
       <ion-toolbar>

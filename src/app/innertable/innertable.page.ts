@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { RouterLink } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,10 +12,21 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: './innertable.page.html',
   styleUrls: ['./innertable.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule]
+  imports: [IonicModule, CommonModule, FormsModule, RouterLink]
 })
 export class InnertablePage {
-  constructor() { }
+  constructor(private modalController: ModalController, private router: Router) { }
+
+  ngOnInit() {
+    this.setOpenLR(this.isModalOpenLR);
+    // Chame as outras funções conforme necessário para os outros modais
+  }
+
+   // Função para fechar o modal e navegar para outra página
+   async fecharModalENavegar() {
+    await this.modalController.dismiss(); // Fecha o modal
+    this.router.navigate(['../semlactose']); // Navega para a página 'semlactose'
+  }
 
  // Função para abrir ou fechar o modal
  isModalOpenLR = false;
@@ -37,4 +51,7 @@ export class InnertablePage {
   setOpenER(isOpen: boolean) {
     this.isModalOpenER = isOpen;
   }
+
+
+  
 }

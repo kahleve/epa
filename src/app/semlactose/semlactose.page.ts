@@ -11,11 +11,13 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule, RouterLink]
 })
-export class SemlactosePage implements OnInit {
+export class SemlactosePage {
 
   constructor() { }
-
-  ngOnInit() {
+  isModalOpenSL = false;
+  
+  setOpenSL(isOpen: boolean) {
+    this.isModalOpenSL = isOpen;
   }
-
+  
 }
