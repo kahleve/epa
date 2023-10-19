@@ -15,7 +15,58 @@ import { Router } from '@angular/router';
   imports: [IonicModule, CommonModule, FormsModule, RouterLink]
 })
 export class InnertablePage {
-  constructor(private modalController: ModalController, private router: Router, private alertController: AlertController) { }
+  // Função para abrir ou fechar o modal
+  isModalOpenLR = false;
+  isModalOpenIR = false;
+  isModalOpenAR = false;
+  isModalOpenER = false;
+
+  receita = {
+    nome: null,
+    descricao:null,
+    ingredientes:[
+      {descricao:null}
+    ],
+    modo_preparo:[
+      {descricao:null}
+    ],
+    tipo: null,
+    espeficacao:null
+  }
+
+  ingrediente = {descricao:null};
+  modopreparo = {descricao:null};
+
+  
+  adcionarIngrediente(){
+    this.receita.ingredientes.push(this.ingrediente)
+    this.ingrediente={descricao:null};
+    console.log(this.receita)
+  }
+
+  removerIngredientes(index:any){
+    this.receita.ingredientes.splice(index,1)
+    // this._crudService.insert(this.receita)
+  }
+
+
+  adcionarModoPreparo(){
+    this.receita.modo_preparo.push(this.modopreparo)
+    this.modopreparo={descricao:null};
+    console.log(this.receita)
+  }
+
+  
+  removerModoPreparo(index:any){
+    this.receita.modo_preparo.splice(index,1)
+    // this._crudService.insert(this.receita)
+  }
+
+
+  constructor(private modalController: ModalController, private router: Router, private alertController: AlertController) {
+    this.receita.ingredientes.splice(0,1)
+    this.receita.modo_preparo.splice(0,1)
+  }
 
   ngOnInit() {
     this.setOpenLR(this.isModalOpenLR);
@@ -56,11 +107,7 @@ export class InnertablePage {
     this.router.navigate(['../semlactose']); // Navega para a página 'semlactose'
   }
 
- // Função para abrir ou fechar o modal
- isModalOpenLR = false;
- isModalOpenIR = false;
- isModalOpenAR = false;
- isModalOpenER = false;
+ 
 
 
 

@@ -91,11 +91,6 @@
 </ion-modal>
 
 
-
-
-
-
-
 <!-- modal Inserir Receitas -->
 <ion-modal [isOpen]="isModalOpenIR">
   <ng-template>
@@ -118,20 +113,48 @@
 
        <ion-row>
         <ion-col>
-          <ion-input label="Nome da receita" label-placement="floating" fill="outline" placeholder=""></ion-input>
+          <ion-input label="Nome da receita" [(ngModel)]="this.receita.nome" label-placement="floating" fill="outline" placeholder=""></ion-input>
+        </ion-col>
+       </ion-row>
+       
+       <ion-row>
+        <ion-col>
+          <ion-input label="Descrição" [(ngModel)]="this.receita.descricao" label-placement="floating" fill="outline" placeholder=""></ion-input>
         </ion-col>
        </ion-row>
 
        <ion-row>
-        <ion-col>
-          <ion-textarea class="ingredientesTextArea" label="Ingredientes" labelPlacement="floating" fill="outline" placeholder="Enter text"></ion-textarea>
+        <ion-col size="12">
+          <ion-input label="Ingredientes" [(ngModel)]="this.ingrediente.descricao" label-placement="floating" fill="outline" placeholder=""></ion-input>
+          <ion-button (click)="adcionarIngrediente()">Adcionar Ingrediente</ion-button>
         </ion-col>
+          <ng-container *ngFor="let ingrediente of this.receita.ingredientes; let index as i">
+            <ion-col size="12">
+              <ion-list>
+                <ion-item>
+                  <ion-label>{{ingrediente.descricao}}</ion-label>     
+                  <ion-button (click)="removerIngredientes(index)">r</ion-button>             
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ng-container>
        </ion-row>
 
        <ion-row>
-        <ion-col>
-          <ion-textarea class="preparoTextArea" label="Modo de Preparo" labelPlacement="floating" fill="outline" placeholder="Enter text"></ion-textarea>
+        <ion-col size="12">
+          <ion-input label="Modo de Preparo" [(ngModel)]="this.modopreparo.descricao" label-placement="floating" fill="outline" placeholder=""></ion-input>
+          <ion-button (click)="adcionarModoPreparo()">Adcionar Modo de Preparo</ion-button>
         </ion-col>
+          <ng-container *ngFor="let modopreparo of this.receita.modo_preparo; let index as i">
+            <ion-col size="12">
+              <ion-list>
+                <ion-item>
+                  <ion-label>{{modopreparo.descricao}}</ion-label>
+                  <ion-button (click)="removerModoPreparo(index)">r</ion-button>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ng-container>
        </ion-row>
 
        <ion-row>
@@ -195,18 +218,12 @@
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding">
-      <p>
-        She's not broken
-        She's just a baby
-        But her boyfriend's like a dad, just like a dad
-        And all those flames that burned before him
-        Now he's gonna fire fight, gotta cool the bad
-        You know that I love you boy
-        Hot like Mexico, rejoice
-        At this point I've gotta choose
-        Nothing to lose
-        Don't call my name
-      </p>
+     
+      <ion-row>
+        <ion-col>
+          <ion-input label="Nome da receita" label-placement="floating" fill="outline" placeholder=""></ion-input>
+        </ion-col>
+       </ion-row>
     </ion-content>
   </ng-template>
 </ion-modal>
