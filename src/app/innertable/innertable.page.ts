@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
 import { ModalController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'app-innertable',
@@ -15,12 +15,40 @@ import { Router } from '@angular/router';
   imports: [IonicModule, CommonModule, FormsModule, RouterLink]
 })
 export class InnertablePage {
-  constructor(private modalController: ModalController, private router: Router) { }
+  constructor(private modalController: ModalController, private router: Router, private alertController: AlertController) { }
 
   ngOnInit() {
     this.setOpenLR(this.isModalOpenLR);
     // Chame as outras funções conforme necessário para os outros modais
   }
+
+
+  //ALERT LR
+
+  async exibirAlertaLR() {
+    const alert = await this.alertController.create({
+      id: 'alertaInserirReceita', // O mesmo ID que você usou no HTML
+      header: 'Deseja inserir essa receita?',
+      buttons: this.alertBotaoLR
+    });
+
+    await alert.present();
+  }
+
+  // Defina os botões aqui
+  alertBotaoLR = [
+    {
+      text: 'Cancelar',
+      role: 'cancel',
+      cssClass: 'secondary',
+    },
+    {
+      text: 'OK',
+      handler: () => {
+        // Coloque o código que você quer executar quando o usuário pressionar OK aqui
+      }
+    }
+  ];
 
    // Função para fechar o modal e navegar para outra página
    async fecharModalENavegar() {
