@@ -7,6 +7,7 @@ import { ModalController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-innertable',
   templateUrl: './innertable.page.html',
